@@ -15,4 +15,10 @@
 # hannah
 # true
 
-p "Enter one word"
+puts "Enter one word "
+word_new = gets.chomp.downcase # instead of downcase one can use upcase
+# word_new = gets.chomp.downcase.gsub(/[^a-z]/i,"") to remove everything except letters
+
+revrse_word = word_new.reverse
+
+p word_new == revrse_word
